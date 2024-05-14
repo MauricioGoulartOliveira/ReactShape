@@ -4,7 +4,7 @@
 .login-container {
   position: relative;
   height: 100vh;
-  background-color: #f2f2f2; /* Fundo cinza claro */
+  background-color: #f2f2f2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,22 +17,22 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('login2.png'); /* Substitua pelo caminho da sua imagem */
+  background-image: url('login2.png');
   background-size: cover;
   background-position: center;
-  filter: blur(5px); /* Desfoca a imagem de fundo */
-  opacity: 0.5; /* Opacidade da imagem de fundo */
+  filter: blur(5px);
+  opacity: 0.5;
 }
 
 .login-form {
-  z-index: 1; /* Coloca o formulário acima da imagem de fundo */
+  z-index: 1;
   text-align: center;
-  color: #000; /* Cor do texto - preto */
-  width: 400px; /* Largura do formulário */
+  color: #000;
+  width: 400px;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semi-transparente */
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3); /* Sombra */
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
 }
 
 .login-form h2 {
@@ -51,10 +51,17 @@ label {
 
 input[type="email"],
 input[type="password"] {
-  width: calc(100% - 20px); /* Largura do input ajustada */
+  width: calc(100% - 20px);
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+
+.error {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 5px;
+  display: block;
 }
 
 button {
@@ -83,6 +90,6 @@ a:hover {
 /* Estilos para telas menores */
 @media (max-width: 768px) {
   .login-form {
-    width: 90%; /* Reduzindo a largura do formulário */
+    width: 90%;
   }
 }
