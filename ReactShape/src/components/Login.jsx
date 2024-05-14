@@ -1,72 +1,49 @@
-
-// src/components/Login.jsx
-import React, { useState } from 'react';
-import './Login.css';
+import  { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "./Login.css";
 
 const Login = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [errors, setErrors] = useState({});
-
-  const validateForm = () => {
-    const newErrors = {};
-    if (!email) {
-      newErrors.email = 'O email é obrigatório';
-    } else if (!/\S+@\S+\.\S+/.test(email)) {
-      newErrors.email = 'O email é inválido';
-    }
-
-    if (!password) {
-      newErrors.password = 'A senha é obrigatória';
-    } else if (password.length < 6) {
-      newErrors.password = 'A senha deve ter pelo menos 6 caracteres';
-    }
-
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (validateForm()) {
-      console.log('Formulário enviado com sucesso!');
-      // Adicione aqui a lógica para enviar o formulário
+    if (email === "snarfalternativa@gmail.com" && password === "xb100pro") {
+      navigate("/dashboard");
+    } else {
+      alert("Credenciais inválidas");
     }
   };
 
   return (
     <div className="login-container">
-      <div className="background-image"></div>
       <form className="login-form" onSubmit={handleSubmit}>
-        <h2>ReactShape</h2>
+        <h1 className="login-title">Login</h1>
         <div className="form-group">
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email">Email</label>
           <input
             type="email"
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          {errors.email && <span className="error">{errors.email}</span>}
         </div>
         <div className="form-group">
-          <label htmlFor="password">Senha:</label>
+          <label htmlFor="password">Senha</label>
           <input
             type="password"
             id="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          {errors.password && <span className="error">{errors.password}</span>}
         </div>
-        <button type="submit">Entrar</button>
-        <div className="register-link">
-          <a href="#">Registrar-se</a>
-        </div>
+        <button type="submit" className="login-button">Entrar</button>
       </form>
     </div>
   );
 };
 
 export default Login;
+
 

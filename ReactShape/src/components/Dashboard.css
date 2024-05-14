@@ -1,0 +1,128 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh; /* Faz a tela ocupar toda a altura */
+  background-image: url('login2.png'); /* Altere o caminho conforme necessário */
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo transparente escuro */
+}
+
+.logo {
+  width: 50px; /* Ajuste o tamanho da logo conforme necessário */
+  margin-right: 1rem;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff; /* Cor do título */
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo do card com transparência */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  flex: 1 1 calc(33% - 2rem); /* Cards responsivos */
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.card-value {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.map-placeholder {
+  width: 100%;
+  height: 200px;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  width: 100%;
+  background-color: #333; /* Cor do fundo do rodapé */
+  color: #fff; /* Cor do texto do rodapé */
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.card-value {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.footer {
+  width: 100%;
+  background-color: #333; /* Cor do fundo do rodapé */
+  color: #fff; /* Cor do texto do rodapé */
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+}

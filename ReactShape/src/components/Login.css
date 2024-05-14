@@ -1,95 +1,56 @@
-/* src/components/Login.css */
-
-/* Estilos para telas grandes */
 .login-container {
-  position: relative;
-  height: 100vh;
-  background-color: #f2f2f2;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-}
-
-.background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('login2.png');
+  height: 100vh;
+  background-image: url('login2.png'); /* Altere o caminho conforme necessário */
   background-size: cover;
   background-position: center;
-  filter: blur(5px);
-  opacity: 0.5;
 }
 
 .login-form {
-  z-index: 1;
-  text-align: center;
-  color: #000;
-  width: 400px;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
 }
 
-.login-form h2 {
+.login-title {
   font-size: 2rem;
-  margin-bottom: 20px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
-label {
+.form-group label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
 }
 
-input[type="email"],
-input[type="password"] {
-  width: calc(100% - 20px);
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.error {
-  color: red;
-  font-size: 0.875rem;
-  margin-top: 5px;
-  display: block;
-}
-
-button {
+.form-group input {
   width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: #fff;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.75rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #0056b3;
-}
-
-a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Estilos para telas menores */
-@media (max-width: 768px) {
-  .login-form {
-    width: 90%;
-  }
+.login-button:hover {
+  background-color: #555;
 }
