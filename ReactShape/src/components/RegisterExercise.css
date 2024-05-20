@@ -1,14 +1,14 @@
-.login-container {
+.register-exercise-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('login2.png'); 
+  background-image: url('login2.png');
   background-size: cover;
   background-position: center;
 }
 
-.login-form {
+.register-exercise-form {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 2rem;
   border-radius: 8px;
@@ -17,30 +17,24 @@
   max-width: 400px;
 }
 
-.login-title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.form-group {
+.register-exercise-form .form-group {
   margin-bottom: 1rem;
 }
 
-.form-group label {
+.register-exercise-form .form-group label {
   display: block;
   margin-bottom: 0.5rem;
 }
 
-.form-group input {
+.register-exercise-form .form-group input,
+.register-exercise-form .form-group textarea {
   width: 100%;
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-.login-button {
+.register-exercise-form button {
   width: 100%;
   padding: 0.75rem;
   border: none;
@@ -51,6 +45,6 @@
   cursor: pointer;
 }
 
-.login-button:hover {
+.register-exercise-form button:hover {
   background-color: #555;
 }

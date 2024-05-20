@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 100vh; /* Faz a tela ocupar toda a altura */
-  background-image: url('login2.png'); /* Altere o caminho conforme necessário */
+  min-height: 100vh; 
+  background-image: url('login2.png'); 
   background-size: cover;
   background-position: center;
   padding: 0;
@@ -15,11 +15,11 @@
   display: flex;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: rgba(0, 0, 0, 0.7); /* Fundo transparente escuro */
+  background-color: rgba(0, 0, 0, 0.7); 
 }
 
 .logo {
-  width: 50px; /* Ajuste o tamanho da logo conforme necessário */
+  width: 50px; 
   margin-right: 1rem;
 }
 
@@ -30,7 +30,7 @@
 .dashboard-title {
   font-size: 2rem;
   font-weight: bold;
-  color: #fff; /* Cor do título */
+  color: #fff; 
 }
 
 .cards {
@@ -42,11 +42,11 @@
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.8); /* Fundo do card com transparência */
+  background-color: rgba(255, 255, 255, 0.8); 
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 2rem;
-  flex: 1 1 calc(33% - 2rem); /* Cards responsivos */
+  flex: 1 1 calc(33% - 2rem); 
   margin: 1rem;
   display: flex;
   flex-direction: column;
@@ -76,8 +76,8 @@
 
 .footer {
   width: 100%;
-  background-color: #333; /* Cor do fundo do rodapé */
-  color: #fff; /* Cor do texto do rodapé */
+  background-color: #333; 
+  color: #fff; 
   text-align: center;
   padding: 1rem 0;
 }
@@ -109,8 +109,8 @@
 
 .footer {
   width: 100%;
-  background-color: #333; /* Cor do fundo do rodapé */
-  color: #fff; /* Cor do texto do rodapé */
+  background-color: #333; 
+  color: #fff; 
   text-align: center;
   padding: 1rem 0;
 }
